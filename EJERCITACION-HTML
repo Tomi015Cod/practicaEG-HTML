@@ -1,0 +1,79 @@
+RESOLUCION HTML:5 
+---Tomas Vigistain--- Entornos graficos
+   Ejercitacion 1:
+    - HTML5 trae muchas ventajas, una de las mas grandes con respecto a las otras versiones es la capacidad de poder añadir audio y video sin necesidad de usar Adobe Flash u otro reproductor multimedia.  Otra es su Geolocalización que permite otorgarle al usuario una informacion mas especifica con respecto a donde se encuentre. Y ademas, para los desarrolladores de juegos en 2D ofrece una completa accesibilidad desde cualquier dispositivo.
+    -Usar HTML5 por sobre los otros es mas practico debido a todas sus ventajas y diferencias ya mencionadas.
+    - Es gratuito; Código más ordenado; Compatibilidad en navegadores; Almacenamiento mejorado; Diseño adaptativo;  
+
+-->A CONTINUACION DEJARE EN CODIGO DESDE EL EJERCICIO 2 HASTA EL FINAL<--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>---EJECITACION HTML:5 (ejercitacion 2->AUDIO)---</h3>
+    <p>-  formatos de audio-> .ogg; .mp3; .wav; .au </p>
+    <audio controls>
+        <source src="https://html5tutorial.info/media/vincent.mp3 ">
+    </audio>
+    <h3>---EJECITACION HTML:5 (ejercitacion 3->VIDEO)---</h3>
+    <p>- formatos de Video-> mp4, webm, ogv</p>
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4/ogg" width="500" height="400"  controls>
+    </video>
+    <h3>---EJERCITACION HTML:5 (ejercitacion 4 ->FORMULARIOS)</h3>
+    <div id="4.A">
+    <form action="#">
+            Campo Requerido
+            <br>
+            <input type="text" id="campo" required>
+            <br>
+            <p><input type="submit" value="Confirmar"></p> 
+    </form>
+    </div>
+    ----------------
+    <br>
+    <div id="4.B">
+        <form action="#">
+            Ingrese su mail:
+            <br>
+            <br>
+            <input type="email" required pattern="@">
+            <br>
+            <p><input type="submit" value="Confirmar"></p>  
+        </form>
+    </div>
+    ----------------
+    <br>
+    <div id="4.C">
+        Ingresa la fecha de tu cumple:
+        <form action="#">
+            <input type="date" required id="fecha">
+            <br>
+            <p><input type="submit" value="Confirmar"></p> 
+        </form>
+    </div>
+    -----------------
+    <br>
+    <div id="4.D">
+        Ingresa el color que desees
+        <form action="#">
+            <input type="color" required id="color">
+            <br>
+            <p><input type="submit" value="Confirmar"></p> 
+        </form>
+    </div>
+    -----------------
+    <br>
+        <div id="4.E">
+        Ingresa un numero entre uno y cien: 
+        <form action="#">
+            <input type="number" required id="numero" min="1" max="100">
+            <br>
+            <p><input type="submit" value="Confirmar"></p> 
+        </form>
+    </div>
+</body>
+</html>
