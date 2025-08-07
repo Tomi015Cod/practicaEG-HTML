@@ -1,0 +1,198 @@
+<!--
+RESOLUCION DE LA PRACTICA 1 ->HTML<-
+ejercitacion 1:
+    1- HTML (HyperText Markup Language) es un lenguaje de marcado, utilizado por toda la WWW.
+    HTML fue desarrollado originalmente por Tim Berners-Lee surante los años 90.
+    La version inicial, HTML 1.0 fue desarrolla en los años 90. Luego HTML 2.0 surgio en 1995. HTML 3.2 y HTML 4.0
+    ambos surgieron en 1997. Dos años despues en 1999 fue actualizada la version 4.0 a la version 4.01.
+    Luego duarante los años 2000 y 2001 surgieron XHTML 1.0 y XHTML 1.1. Posteriormente surgio la evolucion mas clave y la ultima del lenguaje
+    que conocemos como HTML 5.
+
+    2- Los principios basicos de la WWW son:
+        _1- Un eaquema uniforme de nombres para localizar recursos en la Web.
+        _2- Protocolos, para acceder a recursos con nombre en la Web.
+        _3- Hipertexto, para navegar fácilmente entre recursos.
+    
+    3- El proceso en el cual un atributo sigue estando permitido por el estandar pero no se recomienda el uso de este mismo
+    se considera que al atributo desaprobado. Y un atributo se encuentra obsoleto cuando no solo no debe de usarse si no que 
+    tampoco forma mas parte del estandar. 
+
+    4-  La declaración del tipo de documento (DTD Document Type Declaration), esta sección se ubica en la primera línea del archivo HTML, es decir antes de la 
+    marca html. En otras palabras el DTD es una definicion de tipo documento que especifica la estructura, las reglas y los elementos 
+    validos que puede contener un documento HTML.
+        En HTML 4.01 se permite: Strict DTD, Transitional DTD, Frameset DTD.
+    
+    5-  Los metadatos prproporcionan información adicional acerca del documento HTML.
+        Se definen como <meta> dentro de la seccion <head>.
+
+ejercitacion 2:
+    2.a La linea de codigo otorgada expresa un comentario, puede ser colocada en cualquier parte del archivoo. 
+
+    2.b <div id="bloque1">Contenido del bloque1</div> 
+    La linea de codigo anterior representa una division en bloques mediante la etiqueta div, esta etiqueta debe colocarse dentro del body.
+            Cabe aclarar que dicha etiqueta se identifica como "bloque1".
+
+    2.c <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" 
+longdesc="detalles.htm" /> 
+        Dicha linea de codigo representa una imagen, aunque una imagen vacia en la cual solo se veera su atributo alt pues su src esta vacio
+        se identifica como im1, y tiene un ancho y largo de 32px.
+
+    2.d <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " /> 
+        <meta http-equiv="expires" content="16-Sep-2019 7:49 PM" /> 
+            Ambos son metadatos que deben colocarse dentro del head. El primer meta dato proporciona palabras clave que describen el contenido de la página; 
+            mientras que el segundo indica al navegador o servidor cuándo debe dejar de considerar la página como válida o actualizada.
+
+    2.e <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" 
+rel="help">Resumen HTML </a>
+            Lo que simboliza la anterior etiqueta es un enlace hacia la URL que declara el atributo href.
+    
+    2.f La  codificacion de este ejercicio simboliza una tabla en la cual se declaran 3 filas. La primera tiene 4  columnas y es para el encabezado del contenido.
+    En las segundas dos tenemos que la primer columna les indica el numero de fila correspondiente y las demas columnas(3) los distintos valores correspondientes.
+
+ejercitacion 3:
+    3.a El primer link te lleva correctamente a la pagina de google pero pisa la web en la que estas parado.
+        El segundo link te lleva correctamente a la pagina de google y no pisa la pagina actual, esto es gracias a su atributo target="_blank".
+        El tercer link no aparece en la pagina pues no lleva etiqueta de cierre y por ense no lleva contenido.
+        El cuarto y quinto link no funcionan, elcuarto no tiene una URL clara y el quinto por ende tampoco
+        El quinto link no aparece pues no tiene contenido. 
+    
+    3.b Sobre el primer parrafo obtenemos que la imagen no esta incluida dentro de la etiqueta de link, lo que implica que no nos lleva a ningun lado si cliqueamos en ella.
+        Sobre el segundo parrafo tenemos lo contrario al parrafo superior.
+        Sobre el tercero observamos que tanto la imagen esta contenida por el link al igual que el texto.
+        Sobre el cuarto tenemos dos links distintos, uno que engloba a la imagen y otro que engloba el texto(ccabe aclarar que ambos te llevan a la misma URL).
+
+    3.i Por una parte tenemos el boton 1 que posee a diferencia del boton 2 un logo y una descripcion, ademas presenta un ancho y un largo fuera de lo establecido.
+    Pero una gran diferencia es que el primer boton esta declarado como <button> mientras que el segundo como <input> y ademas tiene un atributo value asignado.
+
+    3.j La diferencia entre ambos radios se encuentra en la seleccion multiple. Gracias a que en el primer caso el 
+    atributo name es el mismo para ambos, lo que hace que se identifiquen como opciones y no permitan la eleccion doble.
+    A diferencia del segundo fragmento que los radio son diferentes por su diferencia en los nombres.
+
+    3.k La primera diferencia es el atributo "multiple" que permite la eleccion de varias opciones, y por ende en el segundo select encontramos name="lista[]" lo que nos indica que los valores se enviaran en forma de arreglo pues son varios.
+
+    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " /> 
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" /> 
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <a href="http://www.google.com.ar">Click aquí para ir a Google</a> 
+    <a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a> 
+    <a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"> 
+    <a href="#">Click aquí para ir a Google</a> 
+    <a href="#arriba">Click aquí para volver arriba</a> 
+    <a name="arriba" id="arriba"></a> 
+    --> <!--
+    <p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> 
+    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p> 
+    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima 
+    gen1" />Click aquí</a></p> 
+    <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a 
+    href="http://www.google.com.ar">Click aquí</a></p> 
+    --><!--
+    <label>Botón 1 
+    <button type="button" name="boton1" id="boton1"> 
+    <img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br /> 
+    <b>CLICK AQUÍ</b></button></label> 
+    <br>
+    <label>Botón 2 
+    <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" /> 
+    </label>-->
+    <!--
+    <p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br /> 
+        <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p> 
+    <br />
+    <p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br /> 
+    <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p> 
+    -->
+    <!--
+    <select name="lista"> 
+    <optgroup label="Caso 1"> 
+    <option>Mayo</option> 
+    <option>Junio</option> 
+    </optgroup> 
+    <optgroup label="Caso 2"> 
+    <option>Mayo</option> 
+    <option>Junio</option> 
+    </optgroup> 
+    </select> 
+
+    <br/><br/><br/>
+
+    <select name="lista[]" multiple="multiple"> 
+    <optgroup label=" Caso 1"> 
+    <option>Mayo</option> 
+    <option>Junio</option> 
+    </optgroup> 
+    <optgroup label=" Caso 2"> 
+    <option>Mayo</option> 
+    <option>Junio</option> 
+    </optgroup> 
+    </select>
+    -->
+
+    <!--EJERCICIO 4-->
+    <!--
+  <a href="https://www.frro.utn.edu.ar" target="_blank">
+    <img src="Logo_UTN.jpg" alt="UTN-FRRO" width="45" height="45">
+  </a>
+
+  <hr>
+
+  <h1>AÑO 2008 <em><u>título</u></em></h1>
+
+  <table border="1">
+    <tr>
+      <th colspan="2">Exámenes</th>
+    </tr>
+    <tr>
+      <td>Fecha: ……………………………</td>
+      <td>Aprobados<br>24/30</td>
+    </tr>
+  </table>
+  <small><i>tabla (en la línea de puntos aparece la fecha de la última actualización)</i></small>
+
+  <br><br>
+  <ol>
+    <li><a href="enunciado.html">Enunciado del examen</a></li>
+    <li><a href="https://otra-pagina.com/resolucion.pdf" target="_blank">Resolución</a></li>
+  </ol>
+  
+
+  <br><br>
+
+  <p>Puede realizar consultas completando el siguiente formulario:</p>
+  <form  method="post" enctype="text/plain">
+    <label for="email"><strong>e-mail:</strong></label><br>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="consulta"><strong>consulta:</strong></label><br>
+    <textarea id="consulta" name="consulta" rows="4" cols="30"></textarea><br><br>
+
+    <input type="submit" value="ENVIAR">
+    <input type="reset" value="BORRAR">
+  </form>
+  <small><i>formulario que se envía por correo electrónico a x@x.com</i></small>
+
+  <br><br>
+
+  <h3>Enunciado del examen <em><u>subtítulo</u></em></h3>
+
+  <p>Ejercicio 1: ……………………………</p>
+  <p>Ejercicio 2: ……………………………</p>
+
+
+  <br><br>
+
+  <p>Para más información dirigirse a:  <a href="tomasvigistaim@gmail.com">contacto</a></p>
+  -->
+  <!-- EJERCICIO 5 -->
+   
+</body>
+</html>
