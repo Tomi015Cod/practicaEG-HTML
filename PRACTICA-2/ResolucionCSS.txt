@@ -1,0 +1,99 @@
+RESOLUCION CSS
+---Tomas Vigistain--- Entornos graficos
+Ejercicio 1 (responder)
+    1- CSS son las hojas de estilo en cascada. Y se utilizan para 
+    poder controlar la apariencia de una pagina web.
+
+    2- Podemos asociar las reglas de estilo a las marcas HTML de
+    tres maneras:
+        .  Directamente a la marca, 
+        .  En el head de la página 
+        .  Agrupar las reglas de estilo en un archivo independiente 
+        con extensión *.css
+
+    3- Nivel de pagina; Nivel de elemento HTML; Archivo externo. 
+
+    4- En el powerPoint se nos ilustra solamente:
+        . el selector de Etiqueta: p {
+                                    color: blue;
+                                    }
+        . Selector de grupo:    h1, h2, h3 {
+                                            font-family: Arial;
+                                            }
+    
+    5- Pseudo-clase es un termino (palabra clave) que se utiliza con un selector para indicarle un 
+        estado especial del elemento. La sintaxis es la siguiente: a:hover   /* Cuando el mouse pasa por encima */
+
+    6- La Herencia refiere a la trasmicion de propiedades desde un elemento "Padre" hacia uno o varios elementos "Hijos".
+
+    7_ La cascada es el mecanismo que utiliza CSS, de hecho lo incluye en su propio nombre (cascading), 
+        para determinar que estilo se aplica a un elemento. Se rige por tres factores principales:
+        1 . Especificidad del selector.
+        2 . Origen de la regla.
+        3 . Orden de aparición.
+
+Ejercicio 2 (analizar):
+    Declaraciones: font-family (Cambia la fuente del parrafo con id "normal")
+                ; font-size (Aumenta el tamaño de la fuente del parrafo con id "normal")
+                ; font-weight (Le otorga una cualidad especial a la fuente del parrafo con id "normal", en este caso la fuente se mostraria en negrita o destacada)
+                ; border-style(le asigna a un borde un estilo, una forma. Por ejemplo solid hace que los bordes sean bordes sin mas. Gracias al * el atributo se le asigna tanto al parrafo como al table.)
+                ; border-color (Le asigna un color al borde. Gracias al * el atributo se le asigna tanto al parrafo como al table.)
+                ; border-width(Declara el ancho del borde.  Gracias al * el atributo se le asigna tanto al parrafo como al table.)
+                ; background-color; color; (Estas dos declaraciones sirven para dar color, una para darle color al fondo y otra a la letra del parrafo respectivamente, y afectan al ultimo parrafo con id "distinto").
+
+Ejercicio 3(analizar):
+    Declaraciones: color(modifica el color de la fuente del parrafo con clase "quitar" solamente.)
+                    font-size (le modifica el tamaño a la fuente del parrafo con clase "desarrollo")
+                    font-size (le modifica el tamaño a la fuente del parrafo con clase "importante")
+
+Ejercicio 4(analizar):
+    -En el segundo codigo tenemos que body es representado por la clase "contenido", por lo tanto todas sus clases hijos herederan sus atributos (font-size: 14px;font-weight: bold; ).
+        Ademas cabe aclarar que a <p></p> se le asignan los valores que no hayan sido heredados de la clase padre.
+    -En el primer codigo (izquierda) la clase contenido se asigna a parrafo, y aunque luego se hagan otras modificaciones al estilo de parrafo las que siguen predominando son las de la declaracion "contenido" por cuestiones de especificidad.
+    -Lo que tienen es comun es que las pseudo-clases(a:link,a:visited,a:hover,a:active) se aplican en ambos  
+
+Ejercicio 5:
+    1-> Los textos enfatizados dentro de cualquier título deben ser rojos.
+    h1 em, h2 em, h3 em, h4 em, h5 em, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{
+        color: red; 
+    }
+
+    2-> Cualquier elemento que tenga asignado el atributo "href" y que esté dentro de cualquier párrafo que a 
+    su vez esté dentro de un bloque debe ser color negro. 
+    .bloque p [href]{
+        color: black;
+    }
+    
+    3-> El texto de las listas no ordenadas que estén dentro del bloque identificado como “ultimo” debe ser 
+    amarillo pero si es un enlace a otra página debe ser azul. 
+    #ultimo ul{
+        color: yellow;
+    }
+    #ultimo ul a{
+        color: blue;
+    }
+
+    4-> Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si 
+    están dentro de un título deben ser rojos. 
+    .bloque #importante {
+        color: green;
+    }
+    h1 #importante, h2 #importante, h3 #importante,
+    h4 #importante, h5 #importante, h6 #importante {
+        color: red;
+    }
+
+    5-> Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules. 
+    h1[title]{
+        color: blue;
+    }
+
+    6-> El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados, y violeta 
+    para los ya visitados y, además, no deben aparecer subrayados. 
+    ol a:link {
+        color:blue;text-decoration: none;
+    }
+    ol a:visited{
+        color: violet;
+        text-decoration: none;
+    }
