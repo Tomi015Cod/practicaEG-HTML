@@ -1,0 +1,94 @@
+    RESOLUCION A PRACTICA 3- Desarrollo Web.
+
+-PARTE 1-
+    1- Cuando hablamos de Arquitectura de la Informacion nos referimos a un conjunto de métodos y herramientas que permiten organizar los contenidos, para ser encontrados y utilizados 
+    por los usuarios, de manera simple y directa. Los items que constituyen su metodologia son: Definición de Objetivos del Sitio; Definición de la Audiencia;
+    Definición de Contenidos del Sitio; Definición de la Estructura del Sitio.
+
+    2- Es importante definir y tener claro los objetivos del sitio pues apartir de cada uno de ellos se pueden desprender tareas concretas que permitan 
+    avanzar en el cumplimiento de ellos.
+
+    3- La Audiencia refiere al publico hacia el cual se orientara el sitio y sus funcionalidades. 
+
+    4- Dos preguntas las cualeds ayudarian a orientar una idea de posible audiencia son:
+        - ¿Cuales son las audiencias previstas?
+        - ¿Por que la gente vendra a su sitio?
+
+    5- Un escenario de uso es una herramienta muy util para definir una audiencia, conciste en determinar situaciones de uso reales
+    en el Sitio Web, basado en usuarios existentes que puedan llegar al sitio a buscar determinados tipos de información.
+
+    6- (no encontrada)
+
+    7- Algunos de los requerimientos mas concurridos en el ambito del desarrollo web son:
+            • Formulario de Contacto para envío de mensajes electrónicos  
+            • Sistema de envío de una noticia por mail a un amigo  
+            • Formato de impresión de los contenidos  
+            • Mapa del Sitio  
+            • Buscador interno del Sitio Web
+
+    8 y 9- La Estructura y el diseño son 2 aspectos fundamentales para poder desarrollar un sitio web en condiciones.
+        La estructura refiere a la forma que tendra el sitio en terminos generales con sus secciones, funcionalidades y sistemas de navegacion.
+        En cambio el diseño simboliza a la solucion grafica que se creara para el sitio, en la cual aparecen colores, logotipos, etc.
+
+    10- Las caracacteristicas que debe tener un sisrema de navegacion son: Concistencia; Uniformidad; Visibilidad.
+        Debe ser consistente en cuanto  al diseño de su pagina, es decir el sitio en si debe ser similar en cuanto a su ubicacion y disposicion de paginas.
+        Debe ser uniforme porque debe utilizar similares terminos, para que el usuario confie.
+        Debe ser visible ya que el sistema de navegacion tiene que ser claro, para que el usuario lo tenga como guía permanente en el área en que se encuentre del sitio. 
+
+    11- Los elementos mas importantes son:
+        • Menú General  
+        • Pie de Página  
+        • Ruta de Acceso (breadcrumbs o rastro)  
+        • Fecha de publicación  
+        • Botón Home  
+        • Botón Mapa del sitio  
+        • Botón Contacto  
+        • Buscador  
+        • Botón Ayuda  
+        • Botón Imprimir 
+
+    12- Las 4 etapas que se realizan para definir el diseño visual de un sitio son: Estructura de la pagina; Bocetos; Borradores; Maqueta web.
+            Estructura de la pagina: generación de dibujos sólo lineales que describen los componentes de cada una de las pantallas del sitio, con el objetivo de verificar la ubicación de cada uno de ellos.
+            Bocetos: es un dibujo digital de la forma que tendran las paginas (Se puede realizar con algun software grafico).
+            Borradores: basándose en los bocetos aprobados, se genera un prototipo (páginas clickeables) para probar su funcionamiento.  
+            Maqueta Web:  generar todo el sitio en tecnología HTML utilizando imágenes y contenidos reales. Si el sitio es estático, esta etapa corresponde a la construcción del sitio. Si es dinámico, las páginas generadas 
+                por el diseñador serán posteriormente usadas por el desarrollador de software como plantillas de trabajo 
+                para introducir la programación del sitio. 
+
+    13- Algunos de los sistemas posibles para implementar y obtener un feedback por parte del usuario son:
+            -> Formulario de Contacto.
+            -> Encuesta.
+            -> Comentarios con reseña. 
+
+    14- La prueba de verificacion de objetivos consisste es un  procedimiento que se utiliza para comprobar si la informacion que una persona
+        estudio o recibio efectivamente fue comprendida y recordada.
+        
+    15- En desarrollo web, la Prueba de Verificación de Interfaces es el proceso de comprobar que la comunicación entre los distintos componentes del sistema funciona de acuerdo con las especificaciones, enviando y recibiendo datos en el formato 
+        correcto, usando los protocolos adecuados, manejando errores y tiempos de respuesta de forma apropiada, y asegurando que la integración entre todas las partes sea coherente, segura y sin pérdida de información.
+
+    16- Un artefacto importante y practico para poder desglozar y chequear las funcionalidades de un sitio web es el arbol funcional, este mismo agrupa los contenidos de acuerdo a las
+        tareas que se puedan realizar dentro del sitio.
+
+-PARTE 2-
+
+    1- El termino interfaz describe a la dinamica fisica y logica de interconexion entre dos aparatos o sistemas independientes; o bien entre un 
+        sistema informatico y su usuario humano. Definicion sacada de "https://concepto.de/interfaz/".
+        Algunos de los elementos fundamentales de una interfaz son:
+            -> Elementos de navegacion; Elementos de Interaccion; Elementos de contenido; Elementos de retroalimentacion.
+
+    2- Los sistemas de navegación son los elementos de una interfaz que permiten la navegación por las diferentes 
+        secciones y páginas que componen el sitio web. Definicion extraida de "https://desarrolloweb.com/articulos/2190.php".
+        Algunos de los elementos claves son:
+            -> Menu Principal; Enlaces y botones; Barra o campo de busqueda; Indicadores de ubicacion.
+    
+    3- Flash surgio en 1996 y con el la posibilidad de hacer animación, usar gráficos vectoriales que no perdían calidad en las animaciones, 
+        la posibilidad de jugar a la composición web sin necesidad de programar, simplemente con un escenario con capas que el diseñador era capaz de mover a su antojo.
+         Gracias a problemas de seguridad, problemas de rendimiento y sustitucion por HTML5 fue progresivamente menos utilizados.
+            ->  Problemas de seguridad: Flash era vulnerable a vulnerabilidades y exploits, lo que generaba preocupaciones de seguridad. 
+            ->  Problemas de rendimiento: En algunos casos, Flash podía afectar al rendimiento de los sitios web y dispositivos móviles. 
+            ->  Sustitucion por HTML5:  
+
+    4-      Ajax es una tecnica de desarrollo web que permite la comunicacion asincronica entre el navegador y el servidos, sin necesidad de recargar
+        la pagina. Otorga ventajas por ejemplo otorgando una mayor eficiencia; mayor velocidad e interaccion en tiempo real.
+            En el desarrollo web con AJAX, los errores más comunes incluyen problemas de CORS, manejo inadecuado de errores en las solicitudes,
+        y problemas con la asincronía de las peticiones.
