@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto.</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid" style="border: 3px solid black ;">
+    <div class="row">
+        <div class="col-sm-3 m-3 p-2">
+            <h4>Formulario de Contacto</h4>
+        </div>
+        <form>
+            <div class="form-group mb-3">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre">
+            <small id="nombreSmall" class="form-text text-muted">
+                Ingresa tu/s nombres como aparecen en tu DNI.
+            </small>
+            <div class="form-group mb-3 p-2">
+                <label for="inputApe">Apellido</label>
+                <input type="text" class="form-control" id="inputApe">
+                <small class="form-text text-muted" id="apeSmall"></small>
+            </div>
+            <div class="form-group m-3 p-2">
+                <label for="inputTelefono">Telefono</label>
+                <input type="number" class="form-control" id="inputTelefono">
+            </div>
+            <div class="form-group m-3 p-2">
+                <label for="inputAsunto">Asunto</label>
+                <input type="text" class="form-control" id="inputAsunto">
+                <small id="nombreSmall" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group m-3 p-2">
+                <label for="inputMensaje">Cuerpo Mensaje</label>
+                <textarea class="form-control" id="inputMensaje" rows="5"></textarea>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
