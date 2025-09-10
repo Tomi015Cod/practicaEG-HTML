@@ -91,4 +91,5 @@
     4-      Ajax es una tecnica de desarrollo web que permite la comunicacion asincronica entre el navegador y el servidos, sin necesidad de recargar
         la pagina. Otorga ventajas por ejemplo otorgando una mayor eficiencia; mayor velocidad e interaccion en tiempo real.
             En el desarrollo web con AJAX, los errores más comunes incluyen problemas de CORS, manejo inadecuado de errores en las solicitudes,
+
         y problemas con la asincronía de las peticiones.
