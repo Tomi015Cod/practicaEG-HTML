@@ -1,0 +1,60 @@
+PRACTICA N4-INTRODUCCION A PHP.
+
+Ejercicio 1:
+	Variables: _ $a es boolean
+		   _ $b $c son string.
+		   _ $d es integer.
+	
+	Operadores: *, +=, ++, =, ?.
+
+	Funciones: _ doble --> parametro: $i.
+		   _ echo --> Imprime las variables: $a, $b, $c, $d, $f , $g.
+		   _ is_int --> Parametro: $d.
+		   _ is_string --> Parametro: $a
+	
+	Estructuras de control: _ if (is_int($d)) { ... }
+				_ if (is_string($a)) { ... }
+	
+	Salida: booleanstringstringinteger1xyzxyz183544
+
+Ejercicio 2: 
+	a) si son equivalentes.
+	b) son equivalentes. 
+	c) Tambien son equivalentes.
+
+Ejercicio 3: 
+	a) Ese pedazo de codigo genera una tabla del ancho del 90% y con un borde de 1 px. 	Genera dentro de la tabla 5 filas y 2 columnas.
+	b) El codigo genera un formulario de ingreso de edad, y luego que se ingresa la 	misma determinar si la persona es mayor o menor de edad. (menor < 21 <= mayor).
+
+Ejercicio 4:
+	El.
+	El clavel blanco.
+
+
+Practica Arrays, funciones:
+	
+Ejercicio 1: Ambos codigos son equivalentes.
+
+
+Ejercicio 2: 
+	a) bar1
+	b) 5942
+	c) No imprime en la terminal.
+
+Ejerrcicio 3: 
+	a) "Has entrado en esta pagina a las 12 horas, con 50 minutos y 43 segundos, del 	10/09/2025" (depende de la fecha/hora real)
+	b) 5 + 6 = 11
+
+Ejercicio 4: 
+
+$nombres_usuarios = array(
+    	"robert",                            
+    	"usuario_123",       
+    	"valido-OK_123",              
+    	"___",               
+    	"a-b_c123"           
+);
+
+foreach ($nombres_usuarios as $nombre) {
+    comprobar_nombre_usuario($nombre);
+}
